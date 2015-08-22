@@ -5,9 +5,7 @@
 
 * **1.1** 在2.2.2版中分散的事件分发器cc.TouchDispatcher, cc.MouseDispatcher, cc.KeyboardDispatcher, cc.AccelerometerDispatcher的所有功能都已经被合并到cc.eventManager，所以事件（鼠标，触摸，键盘，陀螺仪，用户自定义）都将由cc.eventManager负责分发，也都将通过它进行注册。
 
-	更多关于cc.eventManager的信息可以查看这篇[详细文档](../../../v3.0/eventManager/en.md)
-
-	如果你希望给我们一些关于事件管理的建议或者反馈，请访问[论坛讨论贴](http://www.cocos2d-x.org/forums/19/topics/45954)
+	更多关于cc.eventManager的信息可以查看这篇[详细文档](../../../v3/eventManager/zh.md)
 
 * **1.2** 由于新的事件管理机制支持开发者在任何对象上绑定事件，所以在2.2.2版中的cc.Layer的事件处理相关函数都被删除了，具体被删除的函数列表如下：
 
@@ -42,23 +40,23 @@
 
     ```
     cc.game.onStart = function(){
-        cc.Director.getInstance().runScene(new MyScene());
+        cc.director.runScene(new MyScene());
     };
     cc.game.run();
     ```
 
-    更详细的信息请参见这个文档：[cc.game](../../../v3.0/cc-game/en.md)
+    更详细的信息请参见这个文档：[cc.game](../../../v3/cc-game/zh.md)
 
 * **2.2** 游戏配置
 
     在2.2.2版中，游戏的配置列表（包含renderMode, fps...）与初始化代码混在cocos2d.js文件中，这样很不美观，所以3.0版中我们移除了`cocos2d.js`文件并将配置列表单独抽出来放在了`project.json`中，所以修改配置非常简单直观。
-    所有配置项可以参见这篇文档：[project.json](../../../v3.0/project-json/en.md)
+    所有配置项可以参见这篇文档：[project.json](../../../v3/project-json/zh.md)
 
 * **2.3** Cocos2d-html5模块配置
 
     Cocos2d-html5已经成为了在2d游戏开发的各个方面都非常有竞争力的游戏引擎，引擎拥有覆盖面非常广泛的特性。也正因此，我们的引擎比市面上大多数的2d游戏引擎占用空间要更大。假设开发者只需要引擎中一部分特性，并且希望引擎占有空间更小，3.0版中我们提供了按需定制引擎的功能。首先，引擎被分割成了不同的模块，所有模块定义可以参见`cocos2d-html5/moduleConfig.json`，开发者可以在`project.json`的`modules`字段中指定自己需要的模块。默认情况下，`cocos2d`是默认模块，它包含完整的Cocos2d-html5，开发者可以将它替换为自己需要的子模块。
 
-    [moduleConfig.json文档](../../../v3.0/moduleconfig-json/en.md)
+    [moduleConfig.json文档](../../../v3/moduleconfig-json/zh.md)
 
 
 ##3. 资源加载过程
@@ -80,14 +78,14 @@
     });
     ```
 
-    详细文档请参见：[cc.loader](../../../v3.0/cc-loader/en.md)
+    详细文档请参见：[cc.loader](../../../v3/cc-loader/zh.md)
 
 * **3.2** 资源加载工具
 
     3.0版不仅提供了更统一易用的cc.loader，还提供了一些配套工具：
 
-    - 异步函数调用模块（模仿node.js）：[cc.async](../../../v3.0/cc-async/en.md)
-    - 资源路径配置工具：[cc.path](../../../v3.0/cc-path/en.md)
+    - 异步函数调用模块（模仿node.js）：[cc.async](../../../v3/cc-async/zh.md)
+    - 资源路径配置工具：[cc.path](../../../v3/cc-path/zh.md)
 
 
 ##4. 属性风格API
@@ -117,7 +115,7 @@
     });
     ```
 
-    详细文档和具体属性列表参见：[Property API](../../../v3.0/getter-setter-api/en.md)
+    详细文档和具体属性列表参见：[Property API](../../../v3/getter-setter-api/zh.md)
 
 
 ##5. 基本数据结构重构
@@ -155,7 +153,7 @@
 	cc.gray                            -->	cc.color.gray
 	```
 
-	[详细文档](../../../v3.0/basic-data/en.md)
+	[详细文档](../../../v3/basic-data/zh.md)
 
 
 ##6. 单例对象
@@ -199,7 +197,7 @@ ccs.TriggerMng.getInstance()                --> ccs.triggerManager
 ccs.ObjectFactory.getInstance()             --> ccs.objectFactory
 ```
 
-[详细文档](../../../v3.0/singleton-objs/zh.md)。
+[详细文档](../../../v3/singleton-objs/zh.md)。
 
 
 ##7. **[Alpha 2新添加]** 对象创建与类的继承
@@ -217,17 +215,17 @@ var sprite = cc.Sprite.createWithSpriteFrameName(spriteFrameName);
 ```
 var sprite = cc.Sprite.create(filename, rect);
 var sprite = cc.Sprite.create(texture, rect);
-var sprite = cc.Sprite.create(spriteFrameName);
+var sprite = cc.Sprite.create("#" + spriteFrameName);
 ```
 
-这个改动不仅适用于cc.Sprite，同样适用于引擎中所有有类似API的类，支持的类列表以及关于`create`函数改造的更详细信息请参见[create API文档](../../../v3.0/create-api/en.md)。
+这个改动不仅适用于cc.Sprite，同样适用于引擎中所有有类似API的类，支持的类列表以及关于`create`函数改造的更详细信息请参见[create API文档](../../../v3/create-api/zh.md)。
 
 我们从未停止改进我们的引擎，所以在Cocos2d-JS v3.0 alpha2中，引擎支持`new`直接构造对象！构造函数和`create`函数共享完全相同的参数：
 
 ```
 var sprite = new cc.Sprite(filename, rect);
 var sprite = new cc.Sprite(texture, rect);
-var sprite = new cc.Sprite(spriteFrameName);
+var sprite = new cc.Sprite("#" + spriteFrameName);
 ```
 
 与此同时，为了向后兼容性，所有`create`函数也被保留，使用哪种API风格完全是开发者自由的选择。更重要的是，这个改进使得类的继承变得前所未有的简单。开发者现在可以完全忽略所有的`initXXX`函数，你可以简单得通过重载`ctor`函数并使用正确的参数调用`this._super`即可完成对象的初始化：
@@ -244,7 +242,7 @@ var Enemy = cc.Sprite.extend({
 var enemy1 = new Enemy(100);
 ```
 
-如上所示，一个`init`函数都不需要调用，非常便于使用。所有cocos2d（不包括extension）类都被重构以支持这种风格，而且JSB也同样完美支持。关于`new`对象构造和类的继承的详细文档将在近期推出。
+如上所示，一个`init`函数都不需要调用，非常便于使用。所有cocos2d和扩展类都被重构以支持这种风格，而且JSB也同样完美支持。详细内容请参考关于`new`对象构造和类的继承的[详细文档](../../../v3/inheritance/zh.md)。
 
 
 ##8. GUI控件
@@ -357,6 +355,8 @@ if (cc.sys.isNative) {
     cc.fileUtils.fullPathForFilename(filename)
     cc.fileUtils.loadFilenameLookup(filename)
     cc.fileUtils.getStringFromFile(filename)
+    cc.fileUtils.getByteArrayFromFile(filename) // [beta新添加]
+    cc.fileUtils.createDictionaryWithContentsOfFile(filename) // [beta新添加]
     cc.fileUtils.isAbsolutePath(path)
     cc.fileUtils.isPopupNotify()
     cc.fileUtils.getValueVectorFromFile(filename)
@@ -366,34 +366,61 @@ if (cc.sys.isNative) {
     cc.fileUtils.purgeCachedEntries()
     cc.fileUtils.fullPathFromRelativeFile(filename, relativeFile)
     cc.fileUtils.getWritablePath()
+    cc.fileUtils.addSearchPath(path) // [beta新添加]
+    cc.fileUtils.setSearchPaths(pathArray) // [beta新添加]
+    cc.fileUtils.getSearchPaths() // [beta新添加]
+    cc.fileUtils.setSearchResolutionsOrder(orderArray) // [beta新添加]
+    cc.fileUtils.getSearchResolutionsOrder() // [beta新添加]
     ```
     
-    所有关于搜索路径的函数都被去除了，因为它们会导致在Cocos2d-html5和Cocos2d-JSB中路径的不一致，而最终使得游戏代码很难维护。
+    请注意关于搜索路径的函数的使用，因为它们会导致在Cocos2d-html5和Cocos2d-JSB中资源路径的不一致，而最终使得游戏代码较难维护。如果需要使用，我们建议在Web端和JSB中使用两套不同的资源映射表，同样的资源变量对应不同的资源路径，这样可以较轻松得维护代码。
 
 * **10.3** cc.AssetsManager
 
-    cc.AssetsManager是用于管理和使用远程服务器资源的类，它也支持简单的版本控制和更新。下面是它的API列表：
+    cc.AssetsManager是用于管理和使用远程服务器资源的类，它也支持简单的版本控制和更新。下面是它的使用方式：
     
     ```
-    var assetsMgr = cc.AssetsManager.create(packageUrl, versionFileUrl, storagePath, errorCallback, progressCallback, successCallback);
-    assetsMgr.setStoragePath(storagePath)
-    assetsMgr.setPackageUrl(packageUrl)
-    assetsMgr.checkUpdate()
-    assetsMgr.getStoragePath()
-    assetsMgr.update()
-    assetsMgr.setConnectionTimeout(timeout)
-    assetsMgr.setVersionFileUrl(versionFileUrl)
-    assetsMgr.getPackageUrl()
-    assetsMgr.getConnectionTimeout()
-    assetsMgr.getVersion()
-    assetsMgr.getVersionFileUrl()
-    assetsMgr.deleteVersion()
+    var manager = new cc.AssetsManager(manifestPath, storagePath);
+    // As the process is asynchronised, you need to retain the assets manager to make sure it won't be released before the process is ended.
+    manager.retain();
+
+    if (!manager.getLocalManifest().isLoaded()) {
+        cc.log("Fail to update assets, step skipped.");
+    }
+    else {
+        var listener = new cc.EventListenerAssetsManager(manager, function(event) {
+            switch (event.getEventCode())
+            {
+                case cc.EventAssetsManager.UPDATE_PROGRESSION:
+                    var percent = event.getPercent();
+                    cc.log("Download percent : " + percent);
+                    break;
+                case cc.EventAssetsManager.ERROR_DOWNLOAD_MANIFEST:
+                case cc.EventAssetsManager.ERROR_PARSE_MANIFEST:
+                    cc.log("Fail to download manifest file, update skipped.");
+                    break;
+                case cc.EventAssetsManager.ALREADY_UP_TO_DATE:
+                case cc.EventAssetsManager.UPDATE_FINISHED:
+                    cc.log("Update finished.");
+                    // You need to release the assets manager while you are sure you don't need it any more
+                    manager.release();
+                    break;
+                case cc.EventAssetsManager.ERROR_UPDATING:
+                    cc.log("Asset update error: " + event.getAssetId() + ", " + event.getMessage());
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
     ```
+    
+    更多信息请参考[cc.AssetsManager文档](../../../v3/assets-manager/zh.md).
 
 
 ##11. 其他API变动
 
-* **11.1** `cc.Broswser`和`sys`被`cc.sys`取代: [详细文档](../../../v3.0/cc-sys/zh.md).
+* **11.1** `cc.Broswser`和`sys`被`cc.sys`取代: [详细文档](../../../v3/cc-sys/zh.md).
 
 * **11.2** 一些`cc.AudioEngine`的API被删除：
 
@@ -417,7 +444,7 @@ if (cc.sys.isNative) {
     getList
     ```
 
-	同时添加`cc.PlistParser`用于解析plist文件：[cc.SAXParser文档](../../../v3.0/cc-saxparser/zh.md)
+	同时添加`cc.PlistParser`用于解析plist文件：[cc.SAXParser文档](../../../v3/cc-saxparser/zh.md)
 
 * **11.4** `cc.textureCache`的`addImageAsync`方法被移除，请统一使用`addImage`.
 
@@ -589,12 +616,132 @@ if (cc.sys.isNative) {
     ```
     getCString  --> getString
     setCString  --> setString
+    
+##12.[Beta新添加]Actions API变动
+
+* **12.1 提供action的短方法创建方式**
+    我们还针对action的相关类，增加了更加简单的创建方法，通过类名第一个字母改为小写就能创建出一个新的对象：
+ 
+    比如: 
+
+    ```
+ var action =  cc.MoveBy.create(2, cc.p(10, 10))
+    ```
+    这个action可以通过下面更简单的方式创建：
+
+    ```
+ var action = cc.moveBy(2,cc.p(10,10))
+    ```
+
+* **12.2 重新设计ease actions**
+
+    所有的ease action其实是修饰性的action, 他们无法脱离目标action独立使用. 其有效部分也只是update函数，所以我们可以添加一个`easing` 到 `cc.ActionInterval`中, 它可以接受不同的ease对象来实现不同的ease动作效果。
+
+    新旧使用方法的比较，新的调用方式采用链式的调用更加简单、易用:
+
+    **旧的调用方式:**
+
+    ```
+    var easeMoveBy = cc.EaseIn.create(cc.MoveBy.create(2, cc.p(100,50)),0.3);
+    ```
+
+    **新的调用方式:**
+
+    ```
+    var easeMoveBy = cc.moveBy(2,cc.p(100,50)).easing(cc.easeIn(0.3);
+    ```
+
+
+* **12.3 关于 cc.Repeat, cc.RepeatForever, cc.Speed 的新设计**
+
+    以下的 cc.Repeat, cc.RepeatForever, cc.Speed 都是修饰性的actions, 所以我们添加对应的函数  `repeat`,`repeatForever`,`speed`,`getSpeed`,`setSpeed` 到 `cc.ActionInterval`中. 通过这邪恶函数，开发者可以将原来复杂的动作以清晰的方式进行表示。All these changes allow developers to write complex actions more clearly.
+
+
+    **旧的调用方式:**
+    ```
+    var anAction = cc.Sequence.create(
+        cc.Speed.create(cc.Repeat.create(cc.EaseIn.create(cc.MoveBy.create(2, cc.p(100,50)),0.3), 5),1.7),
+        cc.RepeatForever.create(cc.RotateBy.create(2, 30))
+    );
+    ```
+
+    **新的调用方式:**
+    ```
+    var anAction = cc.sequence(
+        cc.moveBy(2,cc.p(100,50)).easing(cc.easeIn(0.3)).repeat(5).speed(1.7), 
+        cc.rotateBy(2,30).repeatForever()
+    );
+    ```
+
+    **注意**: 所有的Actions的旧API都保留，并向前兼容。
+* **12.4 新增Actions API列表**
+   
+     旧的调用方法       				     | 新的调用方法
+     ------------ 					     | ------------
+     cc.Repeat.create(action, num)       | action.repeat(num)
+     cc.RepeatForever.create(action)     | action.repeatForever()
+ 	 cc.Speed.create(action, speed)      | action.speed(speed)
+     cc.Speed.setSpeed(speed)  	         | action.setSpeed(speed)
+	 cc.Speed.getSpeed()  			     | action.getSpeed()
+	 cc.EaseIn.create(action, rate)      | action.easing(cc.easeIn(rate))
+	 cc.EaseOut.create(action, rate)     | action.easing(cc.easeOut(rate))
+	 cc.EaseInOut.create(action, rate)   | action.easing(cc.easeInOut(rate))
+	 cc.EaseExponentialIn.create(action) | action.easing(cc.easeExponentialIn())
+	 cc.EaseExponentialOut.create(action)| action.easing(cc.easeExponentialOut())
+	 cc.EaseExponentialInOut.create(action)| action.easing(cc.easeExponentialInOut())
+	 cc.EaseSineIn.create(action)		 | action.easing(cc.easeSineIn())
+	 cc.EaseSineOut.create(action)		 | action.easing(cc.easeSineOut())
+	 cc.EaseSineInOut.create(action)		 | action.easing(cc.easeSineInOut())
+	 cc.EaseElasticIn.create(action)		 | action.easing(cc.easeElasticIn())
+	 cc.EaseElasticOut.create(action)	 | action.easing(cc.easeElasticOut())
+	 cc.EaseElasticInOut.create(action, rate)| action.easing(cc.easeElasticInOut(rate))
+	 cc.EaseBounceIn.create(action)		 | action.easing(cc.easeBounceIn())
+	 cc.EaseBounceOut.create(action)		 | action.easing(cc.easeBounceOut())
+	 cc.EaseBounceInOut.create(action)	 | action.easing(cc.easeBounceInOut())
+	 cc.EaseBackIn.create(action)		 | action.easing(cc.easeBackIn())
+	 cc.EaseBackOut.create(action)		 | action.easing(cc.easeBackOut())
+	 cc.EaseBackInOut.create(action)		 | action.easing(cc.easeBackInOut())      
+	 
+##13.[Beta新变动]修改setText，getText为统一的API SetString, getString
+
+* ccui.Text :
+
+    ```
+    setText --> setString
+    getStringValue --> getString
+    ```
+
+* ccui.TextAtlas :
+
+    ```
+    getStringValue ==> getString
+    ```
+
+* ccui.TextBMFont :
+
+    ```
+    setText --> setString
+    getStringValue --> getString
+    ```
+
+* ccui.TextField :
+
+    ```
+    setText --> setString
+    getStringValue --> getString
+    ```
+
+* cc.EditBox :
+
+    ```
+    setText --> setString
+    getText --> getString
     ```
 
 其他详细文档列表：
 
-* [cc.log](../../../v3.0/cc-log/zh.md)
-* [cc.spriteFrameCache](../../../v3.0/cc-spriteframecache/zh.md)
-* [cc.FileUtils](../../../v3.0/cc-fileutils/zh.md)
-* [如何在JSB项目中使用extension](../../../jsb/jsb-extension/zh.md)
-* [more](../../../v3.0/more-change-from-v2-to-v3/zh.md)
+* [cc.log](../../../v3/cc-log/zh.md)
+* [cc.spriteFrameCache](../../../v3/cc-spriteframecache/zh.md)
+* [cc.FileUtils](../../../v3/cc-fileutils/zh.md)
+* [如何在JSB项目中使用extension](../../../v2/jsb/jsb-extension/zh.md)
+* [more](../../../v3/more-change-from-v2-to-v3/zh.md)

@@ -10,14 +10,14 @@ We are happy to announce the release of:
 
 ### Download ###
 
-[cocos2d-x-3.0rc1.zip](http://cdn.cocos2d-x.org/cocos2d-x-3.0rc1.zip)
+[Cocos2d-x-3.0rc1.zip](http://cdn.cocos2d-x.org/cocos2d-x-3.0rc1.zip)
 
 ### Highlights ###
 
 * update to Chipmunk2D v6.2.1
 * fix the issue that Application will be black on some Android devices
 * many other bugs fixed
-* initial version of WP8 support, `accelerometer`, `custome shaders`, `console`, `tools for creating wp8 sample` are not supported
+* initial version of WP8 support, `accelerometer`, `custom shaders`, `console`, `tools for creating wp8 sample` are not supported
 
 ### Documentation ###
 
@@ -37,7 +37,7 @@ Read the [complete changelog](https://github.com/cocos2d/cocos2d-x/blob/cocos2d-
 
 ### Release Notes
 
-Read more about all the new features at [cocos2d-x v3.0 release notes](https://github.com/cocos2d/cocos2d-x/blob/develop/docs/RELEASE_NOTES.md)
+Read more about all the new features at [Cocos2d-x v3.0 release notes](https://github.com/cocos2d/cocos2d-x/blob/develop/docs/RELEASE_NOTES.md)
 
 
 We would greatly appreciate if you can test this version and report any kind of bug and/or issue that you might find.

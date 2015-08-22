@@ -27,7 +27,7 @@ Cocos2d-x最爽的一个特性之一就是提供了在两个不同场景之间�
 - TransitionTurnOffTiles 小方格消失进入
 - TransitionRadialCCW／TransitionRadialCW 扇面展开收起
 
-等等，更多效果可查看[官方API](http://www.cocos2d-x.org/wiki/Reference)。
+等等，更多效果可查看[官方API](http://cn.cocos2d-x.org/doc/cocos2d-x-3.0/index.html)。
 
 场景转换的实现：
 

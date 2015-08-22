@@ -12,7 +12,7 @@ We are happy to announce the release of:
 
 ### Download ###
 
-[cocos2d-x-3.0.zip](http://cdn.cocos2d-x.org/cocos2d-x-3.0.zip)
+[Cocos2d-x-3.0.zip](http://cdn.cocos2d-x.org/cocos2d-x-3.0.zip)
 
 ### Fixes
 
@@ -27,7 +27,7 @@ Read the [complete changelog](https://github.com/cocos2d/cocos2d-x/blob/cocos2d-
 
 ## Release Notes
 
-Read more about all the new features at [cocos2d-x v3.0 release notes](https://github.com/cocos2d/cocos2d-x/blob/develop/docs/RELEASE_NOTES.md)
+Read more about all the new features at [Cocos2d-x v3.0 release notes](https://github.com/cocos2d/cocos2d-x/blob/develop/docs/RELEASE_NOTES.md)
 
 
 We would greatly appreciate if you can test this version and report any kind of bug and/or issue that you might find.
@@ -40,18 +40,18 @@ Thank you!
 
 ## Download
 
-- [cocos2d-js-v3.0-alpha2.zip](http://cdn.cocos2d-x.org/cocos2d-js-v3.0-alpha2.zip)
+- [Cocos2d-js-v3.0-alpha2.zip](http://cdn.cocos2d-x.org/cocos2d-js-v3.0-alpha2.zip)
 - [Downloadable API reference](http://cdn.cocos2d-x.org/Cocos2d-html5_v3.0_Alpha2_API_Doc.zip)
 
 ## Highlights
 
 
 * **[Alpha2 Feature]** Provided a download page for web developers to choose modules and download customized Cocos2d-JS web engine, in one single file, compressed or not, [Online link](http://www.cocos2d-x.org/jsbuilder).
-* **[Alpha2 Feature]** Supported `new` operator for engine classes, constructor started to accept the same parameters as create functions, and developer can pass initilization parameters in `ctor` while extend engine classes, [document reference](http://www.cocos2d-x.org/docs/manual/framework/html5/v3.0/inheritance/en).
+* **[Alpha2 Feature]** Supported `new` operator for engine classes, constructor started to accept the same parameters as create functions, and developer can pass initialization parameters in `ctor` while extend engine classes, [document reference](http://www.cocos2d-x.org/docs/manual/framework/html5/v3.0/inheritance/en).
 * **[Alpha2 Feature]** Added Cocos Console support to test cases and Moon Warriors game sample.
 * Provided a console tool which make the development of HTML5 and JSB application much simpler and more convenient, [Cocos Console document](http://www.cocos2d-x.org/docs/manual/framework/html5/cocos-console/en).
 * Incredibly simplified game creation process via cc.game which replaced old cc.Application, [cc.game document](http://www.cocos2d-x.org/docs/manual/framework/html5/v3.0/cc-game/en).
-* Refactored some properties of all rendering classes with getter setter for providing a new set of Javascript user friendly APIs, and provided `attr` function for cc.Node to modify multiple properties, [property APIs document](http://www.cocos2d-x.org/docs/manual/framework/html5/v3.0/getter-setter-api/en).
+* Refactored some properties of all rendering classes with getter setter for providing a new set of JavaScript user friendly APIs, and provided `attr` function for cc.Node to modify multiple properties, [property APIs document](http://www.cocos2d-x.org/docs/manual/framework/html5/v3.0/getter-setter-api/en).
 * Added new event manager to Cocos2d-JS, all events are dispatched via cc.eventManager with several types of event listener including custom event listener, [event manager document](http://www.cocos2d-x.org/docs/manual/framework/html5/v3.0/eventManager/en).
 
 ### More information ###
@@ -63,7 +63,7 @@ Read more about all the new features at [Cocos2d-JS v3.0 alpha2 changelog](http:
 
 ## Download
 
-- [cocos2d-html5-v2.2.3.zip](http://cdn.cocos2d-x.org/cocos2d-html5-v2.2.3.zip)
+- [Cocos2d-html5-v2.2.3.zip](http://cdn.cocos2d-x.org/cocos2d-html5-v2.2.3.zip)
 - [Downloadable API reference](http://cdn.cocos2d-x.org/Cocos2d-html5_v2.2.3_API_Doc.zip)
 
 ## Highlights
@@ -92,7 +92,7 @@ Read more about all the new features at [Cocos2d-html5 v2.2.3 changelog](http://
 If you are a Cocos2d-x Lua/JavaScript engineer, are you satisfied with:
 
 * Typing character by character.
-* Debuging by adding a lot of logs.
+* Debugging by adding a lot of logs.
 * Checking the result by restarting game again and again.
 * ...
 

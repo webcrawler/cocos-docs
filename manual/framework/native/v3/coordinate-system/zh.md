@@ -142,23 +142,23 @@ Sets the 'z' coordinate in the position. It is the OpenGL Z vertex value.
 
 在函数中获取到touch，我们在设计游戏逻辑时需要用到触摸点在Cocos2d坐标系中的位置，就需要将touch的坐标转换成OpenGL坐标系中的点坐标。
 
-Touch position是屏幕坐标系中的点，OpenGL position是cocos2d-x用到的OpenGL坐标系上的点坐标。通常我们在开发中会使用两个接口`getLocation()`和`getLocationInView()`来进行相应坐标转换工作。
+Touch position是屏幕坐标系中的点，OpenGL position是Cocos2d-x用到的OpenGL坐标系上的点坐标。通常我们在开发中会使用两个接口`getLocation()`和`getLocationInView()`来进行相应坐标转换工作。
 
 在开发中一般使用`getLocation()`获取触摸点的GL坐标，而`getLocation()`内部实现是通过调用`Director::getInstance()->convertToGL(_point);`返回GL坐标。
 
 此外，关于世界坐标系和本地坐标系的相互转换，在Node中定义了以下四个常用的坐标变换的相关方法。
 
 ```
-	// 把基于当前节点的本地坐标系下的坐标转换到世界坐标系中
+	// 把世界坐标转换到当前节点的本地坐标系中
 	Point convertToNodeSpace(const Point& worldPoint) const;
     
-    // 把世界坐标转换到当前节点的本地坐标系中
+    // 把基于当前节点的本地坐标系下的坐标转换到世界坐标系中
     Point convertToWorldSpace(const Point& nodePoint) const;
     
     // 基于Anchor Point把基于当前节点的本地坐标系下的坐标转换到世界坐标系中
     Point convertToNodeSpaceAR(const Point& worldPoint) const;
     
-    基于Anchor Point把世界坐标转换到当前节点的本地坐标系中
+    // 基于Anchor Point把世界坐标转换到当前节点的本地坐标系中
     Point convertToWorldSpaceAR(const Point& nodePoint) const;
 ```
 

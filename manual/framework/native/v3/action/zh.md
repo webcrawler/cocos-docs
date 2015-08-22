@@ -25,7 +25,7 @@
 
 ###FlipX和FlipY
 
-这两个动作分别用于将精力沿X轴和Y轴反向显示，其作用与设置精灵的FlipX和FlipY属性相同，将其包装成动作是为了便于与其他动作进行组合。
+这两个动作分别用于将精灵沿X轴和Y轴反向显示，其作用与设置精灵的FlipX和FlipY属性相同，将其包装成动作是为了便于与其他动作进行组合。
 
 下面代码将一个精灵移动到一端后反向显示再进行移回原点的动作：
 
@@ -94,7 +94,7 @@ MoveTo的position值表示最后位置，而MoveBy的position则表示移动的�
 
 ![bezier](res/bezier.png)
 
-使用时，我们要先创建ccBezierConfig结构体，设置好终点endPosition以及两个两个控制点controlPoint_1和controlPoint_2后，再把结构体传入BezierTo或BezierBy的初始化方法中：
+使用时，我们要先创建ccBezierConfig结构体，设置好终点endPosition以及两个控制点controlPoint_1和controlPoint_2后，再把结构体传入BezierTo或BezierBy的初始化方法中：
 
 ```
 	ccBezierConfig bezier;
@@ -244,7 +244,7 @@ d表示需要延时的时间。
 ```
 	auto repeat = RepeatForever::create(animation);
 	auto speed = Speed::create(repeat, 0.5f);
-	sprite->run(speed);
+	sprite->runAction(speed);
 ```
 
 第二个参数为变速比例，设置为0.5f则速度为原来一半。

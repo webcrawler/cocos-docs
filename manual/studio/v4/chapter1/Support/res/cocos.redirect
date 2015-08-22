@@ -1,0 +1,344 @@
+#帮助
+location = /help/2.0/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/' redirect;
+}  
+
+#按钮
+location = /help/2.0/button/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/button/zh.md' redirect;
+}  
+
+#复选框
+location = /help/2.0/checkbox/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/checkbox/zh.md' redirect;
+}  
+
+#精灵
+location = /help/2.0/sprite/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/sprite/zh.md' redirect;
+}  
+
+#图片
+location = /help/2.0/imageview/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/image/zh.md' redirect;
+} 
+
+#艺术数字
+location = /help/2.0/textatlas/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/atlaslabel/zh.md' redirect;
+}
+
+#FNT字体
+location = /help/2.0/textbmfont/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/bitmaplabel/zh.md' redirect;
+} 
+
+#进度条
+location = /help/2.0/loadingbar/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/progressbar/zh.md' redirect;
+} 
+
+#滑动条
+location = /help/2.0/slider/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/slider/zh.md' redirect;
+} 
+
+
+#文本
+location = /help/2.0/text/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/label/zh.md' redirect;
+} 
+
+#输入框
+location = /help/2.0/textfield/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/textfield/zh.md' redirect;
+} 
+
+#粒子
+location = /help/2.0/particle/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/particle/zh.md' redirect;
+} 
+
+#地图
+location = /help/2.0/gamemap/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/tilemap/zh.md' redirect;
+} 
+
+#声音
+location = /help/2.0/simpleaudio/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/audio/zh.md' redirect;
+} 
+
+#节点
+location = /help/2.0/singlenode/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/node/zh.md' redirect;
+} 
+
+#基础容器
+location = /help/2.0/panel/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/containers/panel/zh.md' redirect;
+} 
+
+#滚动容器
+location = /help/2.0/scrollview/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/containers/scrolledview/zh.md' redirect;
+} 
+
+#列表容器
+location = /help/2.0/listview/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/containers/listview/zh.md' redirect;
+} 
+
+#翻页容器
+location = /help/2.0/pageview/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/containers/pageview/zh.md' redirect;
+} 
+
+#控件帮助
+location = /help/2.0/controls/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/how-to-use-controls/zh.md' redirect;
+} 
+
+#armaturenode
+location = /help/2.0/armaturenode/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/custom/armature/zh.md' redirect;
+} 
+
+#3D控件_模型
+location = /help/2.0/sprite3d/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/3D/model/zh.md' redirect;
+} 
+
+#3D控件_3D粒子
+location = /help/2.0/particle3d/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/3D/particle/zh.md' redirect;
+} 
+
+#3D控件_摄像机
+location = /help/2.0/usercamera/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/3D/camera/zh.md' redirect;
+} 
+
+#3D控件_节点
+location = /help/2.0/node3d/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/basic-controls/node/zh.md' redirect;
+} 
+
+#andriod设备连接修复教程
+location = /help/2.0/connect-solution/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter5/connect-solution/zh.md' redirect;
+} 
+
+#导出文件加载教程
+location = /help/2.0/load-export-datafile/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter5/load-export-datafile/zh.md' redirect;
+} 
+
+#升级framework教程
+location = /help/2.0/upgrade-framework/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter5/upgrade-framework/zh.md' redirect;
+} 
+
+#在浏览器调试教程
+location = /help/2.0/debug-on-browser/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter5/debug-on-browser/zh.md' redirect;
+} 
+
+#Cocos入门教程
+location = /help/2.0/introduceCocos/chinese {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter5/introduceCocos/zh.md' redirect;
+} 
+
+#====英文连接处理======
+#帮助
+location = /help/2.0/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter1/fundamentals/en' redirect;
+}
+#按钮
+location = /help/2.0/button/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/button/en' redirect;
+} 
+#复选框
+location = /help/2.0/checkbox/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/checkbox/en' redirect;
+} 
+#精灵
+location = /help/2.0/sprite/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/sprite/en' redirect;
+} 
+#图片
+location = /help/2.0/imageview/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/image/en' redirect;
+} 
+#艺术数字
+location = /help/2.0/textatlas/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/atlaslabel/en' redirect;
+} 
+#FNT字体
+location = /help/2.0/textbmfont/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/bitmaplabel/en' redirect;
+} 
+#进度条
+location = /help/2.0/loadingbar/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/progressbar/en' redirect;
+} 
+#滑动条
+location = /help/2.0/slider/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/slider/en' redirect;
+} 
+#文本
+location = /help/2.0/text/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/label/en' redirect;
+} 
+#输入框
+location = /help/2.0/textfield/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/textfield/en' redirect;
+} 
+#粒子
+location = /help/2.0/particle/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/particle/en' redirect;
+} 
+#地图
+location = /help/2.0/gamemap/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/tilemap/en' redirect;
+} 
+#声音
+location = /help/2.0/simpleaudio/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/audio/en' redirect;
+} 
+#节点
+location = /help/2.0/singlenode/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/node/en' redirect;
+} 
+#基础容器
+location = /help/2.0/panel/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/containers/panel/en' redirect;
+} 
+#滚动容器
+location = /help/2.0/scrollview/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/containers/scrolledview/en' redirect;
+} 
+#列表容器
+location = /help/2.0/pageview/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/containers/pageview/en' redirect;
+} 
+#翻页容器
+location = /help/2.0/listview/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/containers/listview/en' redirect;
+} 
+
+#控件帮助
+location = /help/2.0/controls/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/how-to-use-controls/en' redirect;
+} 
+
+#armaturenode
+location = /help/2.0/armaturenode/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/custom/armature/en' redirect;
+} 
+
+#3D控件_模型
+location = /help/2.0/sprite3d/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/3D/model/en.md' redirect;
+} 
+
+#3D控件_3D粒子
+location = /help/2.0/particle3d/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/3D/particle/en.md' redirect;
+} 
+
+#3D控件_摄像机
+location = /help/2.0/usercamera/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://www.cocos.com/doc/article/index?type=Cocos%20Studio&url=/doc/cocos-docs-master/manual/studio/v3/chapter3/chapter3/3D/camera/en.md' redirect;
+} 
+
+#3D控件_节点
+location = /help/2.0/node3d/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter3/basic-controls/node/en' redirect;
+} 
+
+#Andriod设备连接修复教程
+location = /help/2.0/connect-solution/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter5/connect-solution/en' redirect;
+} 
+
+#导出文件加载教程
+location = /help/2.0/load-export-datafile/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter5/load-export-datafile/en' redirect;
+} 
+
+#升级framework教程
+location = /help/2.0/upgrade-framework/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter5/upgrade-framework/en' redirect;
+} 
+
+#在浏览器调试教程
+location = /help/2.0/debug-on-browser/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter5/debug-on-browser/en' redirect;
+} 
+
+#Cocos入门教程
+location = /help/2.0/introduceCocos/english {
+    rewrite_log on; 
+    rewrite ^/(.*)$ 'http://cocos2d-x.org/docs/manual/studio/v2/chapter5/introduceCocos/en' redirect;
+} 
+
